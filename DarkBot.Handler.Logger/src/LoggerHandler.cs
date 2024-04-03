@@ -97,14 +97,14 @@ public partial class LoggerHandler {
 }
 
 public static partial class LoggerHandlerLogger {
-    [LoggerMessage(EventId = 10, Level = LogLevel.Information, Message = "[Online]\n\tDateTime: {DateTime}\n\tSelf: {SelfName}({SelfId})")]
-    public static partial void InformationOnline(this ILogger<LoggerHandler> logger, DateTime dateTime, string selfName, uint selfId);
+    [LoggerMessage(EventId = 10, Level = LogLevel.Information, Message = "[Online]\n{s, 6}DateTime: {DateTime}\n{s, 6}Self: {SelfName}({SelfId})")]
+    public static partial void InformationOnline(this ILogger<LoggerHandler> logger, DateTime dateTime, string selfName, uint selfId, string s = "");
 
-    [LoggerMessage(EventId = 11, Level = LogLevel.Information, Message = "[PrivateMessage]\n\tDateTime: {DateTime}\n\tSelf: {selfName}({SelfId})\n\tMessageId: {MessageId}\n\tSender: {senderName}({SenderId})\n\tMessage: {Message}")]
-    public static partial void InformationPrivateMessage(this ILogger<LoggerHandler> logger, DateTime dateTime, string selfName, uint selfId, int messageId, string senderName, uint senderId, string message);
+    [LoggerMessage(EventId = 11, Level = LogLevel.Information, Message = "[PrivateMessage]\n{s, 6}DateTime: {DateTime}\n{s, 6}Self: {selfName}({SelfId})\n{s, 6}MessageId: {MessageId}\n{s, 6}Sender: {senderName}({SenderId})\n{s, 6}Message: {Message}")]
+    public static partial void InformationPrivateMessage(this ILogger<LoggerHandler> logger, DateTime dateTime, string selfName, uint selfId, int messageId, string senderName, uint senderId, string message, string s = "");
 
-    [LoggerMessage(EventId = 12, Level = LogLevel.Information, Message = "[PrivateMessage]\n\tDateTime: {DateTime}\n\tSelf: {SelfName}({SelfId})\n\tMessageId: {MessageId}\n\tGroup: {GroupName}({GroupId})\n\tSender: {senderName}({SenderId})\n\tMessage: {Message}")]
-    public static partial void InformationGroupMessage(this ILogger<LoggerHandler> logger, DateTime dateTime, string selfName, uint selfId, int messageId, string groupName, uint groupId, string senderName, uint senderId, string message);
+    [LoggerMessage(EventId = 12, Level = LogLevel.Information, Message = "[PrivateMessage]\n{s, 6}DateTime: {DateTime}\n{s, 6}Self: {SelfName}({SelfId})\n{s, 6}MessageId: {MessageId}\n{s, 6}Group: {GroupName}({GroupId})\n{s, 6}Sender: {senderName}({SenderId})\n{s, 6}Message: {Message}")]
+    public static partial void InformationGroupMessage(this ILogger<LoggerHandler> logger, DateTime dateTime, string selfName, uint selfId, int messageId, string groupName, uint groupId, string senderName, uint senderId, string message, string s = "");
 
     [LoggerMessage(EventId = 999, Level = LogLevel.Error, Message = "")]
     public static partial void ErrorUnprocessedError(this ILogger<LoggerHandler> logger, Exception e);
