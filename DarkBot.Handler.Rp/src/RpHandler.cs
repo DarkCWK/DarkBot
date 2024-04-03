@@ -91,7 +91,7 @@ public partial class RpHandler {
     }
 
     private static uint CalculateTodayRp(uint userId) {
-        return (uint)(RandomUtil.GetRandom(DateTime.UtcNow.Date.ToUnixTimestamp() % userId) % 101);
+        return (uint)(RandomUtil.GetRandom(DateTime.Now.Date.ToUnixTimestamp() % userId) % 101);
     }
 
     private string GetRpDescriptionPrefix(uint rp) {
