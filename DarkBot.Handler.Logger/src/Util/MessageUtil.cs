@@ -16,7 +16,7 @@ public static class MessageUtil {
             FaceMessage face => $"[Face:{face.FaceId}]",
             ImageMessage image => $"[Image:{image.Url}]",
             RecordMessage record => $"[Record:{record.Url}]",
-            AtMessage at => $"[At:{at}]",
+            AtMessage at => $"[At:{at.UserId}]",
             ReplyMessage reply => $"[Reply:{reply.MessageId}]",
             JsonMessage json => $"[Json:{json.Json.GetRawText()}]",
             _ => "[Unknown]"
