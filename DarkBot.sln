@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkBot.Launcher", "DarkBot.Launcher\DarkBot.Launcher.csproj", "{09CA1408-1A2B-4BDE-A82B-F0499966FB1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkBot.Core", "DarkBot.Core\DarkBot.Core.csproj", "{47384537-0F97-4B80-87EA-D34A2D8F4A03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkBot.Protocol.OneBotv11", "DarkBot.Protocol.OneBotv11\DarkBot.Protocol.OneBotv11.csproj", "{1B94D07B-9209-435C-88A4-03DDD827DD9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkBot.Handler.Logger", "DarkBot.Handler.Logger\DarkBot.Handler.Logger.csproj", "{5CC6B517-B5BE-46B0-839C-1A9DA848A383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkBot.Handler.Rp", "DarkBot.Handler.Rp\DarkBot.Handler.Rp.csproj", "{0F9FFE11-D568-4981-97DE-1C9B086EFCDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09CA1408-1A2B-4BDE-A82B-F0499966FB1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09CA1408-1A2B-4BDE-A82B-F0499966FB1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09CA1408-1A2B-4BDE-A82B-F0499966FB1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09CA1408-1A2B-4BDE-A82B-F0499966FB1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47384537-0F97-4B80-87EA-D34A2D8F4A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47384537-0F97-4B80-87EA-D34A2D8F4A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47384537-0F97-4B80-87EA-D34A2D8F4A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47384537-0F97-4B80-87EA-D34A2D8F4A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B94D07B-9209-435C-88A4-03DDD827DD9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B94D07B-9209-435C-88A4-03DDD827DD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B94D07B-9209-435C-88A4-03DDD827DD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B94D07B-9209-435C-88A4-03DDD827DD9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CC6B517-B5BE-46B0-839C-1A9DA848A383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CC6B517-B5BE-46B0-839C-1A9DA848A383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CC6B517-B5BE-46B0-839C-1A9DA848A383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CC6B517-B5BE-46B0-839C-1A9DA848A383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9FFE11-D568-4981-97DE-1C9B086EFCDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9FFE11-D568-4981-97DE-1C9B086EFCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9FFE11-D568-4981-97DE-1C9B086EFCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9FFE11-D568-4981-97DE-1C9B086EFCDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

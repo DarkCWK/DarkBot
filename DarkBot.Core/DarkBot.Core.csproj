@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>DarkBot.Core</PackageId>
+    <PackageVersion>0.0.0-alpha.5</PackageVersion>
+    <Authors>DarkCWK</Authors>
+
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>
